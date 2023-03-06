@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 git credentialsId: 'c8430932-7b9c-4fa6-8799-bce2abbb142f', url: 'https://github.com/deepanshu999/EmployeeManagementSystem.git'
-                sh 'mvn -B -EmployeeManagementSystem clean package' 
+                sh 'mvn -B -EmployeeManagementSystemApplication clean package' 
                 
             }
         }
